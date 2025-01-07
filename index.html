@@ -27,18 +27,22 @@
             margin-bottom: 10px;
         }
         .card {
-            padding: 20px;
+            padding: 10px;
             border-radius: 8px;
             text-align: center;
             font-weight: bold;
             color: white;
             margin: 5px;
-            width: calc(25% - 10px); /* 4 cartes par ligne */
+            flex: 1 0 20%; /* 4 cartes par ligne, mais elles s'adaptent selon la largeur */
+            aspect-ratio: 1; /* Assurer que les cartes sont carrées */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .red { background-color: red; }
         .blue { background-color: blue; }
         .assassin { background-color: black; }
-        .neutral { background-color:yellow}
+        .neutre { background-color: rgb(252, 252, 5); color: black; }
     </style>
 </head>
 <body>
