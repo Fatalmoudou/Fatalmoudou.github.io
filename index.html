@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartes QR Code</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: white;
-            padding: 20px;
-        }
-        .card-container {
-            width: 100%;
-            max-width: 800px;
-            padding: 20px;
-            box-sizing: border-box;
-            display: grid;
-            gap: 10px; /* Espace entre les cartes */
-        }
-        .card {
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            font-weight: bold;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.2em; /* Taille de texte proportionnelle */
-            aspect-ratio: 1; /* Maintenir une forme carrée pour chaque carte */
-        }
-        .red { background-color: red; }
-        .blue { background-color: blue; }
-        .assassin { background-color: black; }
-        .neutral { background-color: rgb(252, 252, 5); color: black; }
-
-        /* Ajuster la taille des cartes sur les petits écrans */
-        @media (max-width: 600px) {
-            .card {
-                font-size: 1em; /* Réduire la taille du texte sur les petits écrans */
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cartes QR Code</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: white;
+                padding: 20px;
             }
-        }
-    </style>
-</head>
-<body>
-
-<div class="card-container" id="card-container">
-    <!-- Les cartes seront générées ici via JavaScript -->
-</div>
+            .card-container {
+                width: 100%;
+                max-width: 800px;
+                padding: 20px;
+                box-sizing: border-box;
+                display: grid;
+                gap: 10px; /* Espace entre les cartes */
+                grid-auto-rows: 1fr; /* Maintenir l'aspect ratio */
+            }
+            .card {
+                padding: 20px;
+                border-radius: 8px;
+                text-align: center;
+                font-weight: bold;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.2em; /* Taille de texte proportionnelle */
+                aspect-ratio: 1; /* Maintenir une forme carrée pour chaque carte */
+            }
+            .red { background-color: red; }
+            .blue { background-color: blue; }
+            .assassin { background-color: black; }
+            .neutral { background-color: rgb(252, 252, 5); color: black; }
+    
+            /* Ajuster la taille des cartes sur les petits écrans */
+            @media (max-width: 600px) {
+                .card {
+                    font-size: 1em; /* Réduire la taille du texte sur les petits écrans */
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+    <div class="card-container" id="card-container">
+        <!-- Les cartes seront générées ici via JavaScript -->
+    </div>
+    
 
 <script>
     // Récupérer les données de l'URL
