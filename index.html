@@ -20,29 +20,33 @@
             max-width: 800px;
             padding: 20px;
             box-sizing: border-box;
-        }
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Créer une grille adaptative */
+            gap: 10px; /* Espace entre les cartes */
         }
         .card {
-            padding: 10px;
+            padding: 20px;
             border-radius: 8px;
             text-align: center;
             font-weight: bold;
             color: white;
-            margin: 5px;
-            flex: 1 0 20%; /* 4 cartes par ligne, mais elles s'adaptent selon la largeur */
-            aspect-ratio: 1; /* Assurer que les cartes sont carrées */
             display: flex;
             justify-content: center;
             align-items: center;
+            aspect-ratio: 1; /* Assurer que les cartes sont carrées */
+            font-size: 1.2em; /* Taille de texte proportionnelle */
         }
         .red { background-color: red; }
         .blue { background-color: blue; }
         .assassin { background-color: black; }
         .neutral { background-color: rgb(252, 252, 5); color: black; }
+
+        /* Ajuster la taille des cartes sur les petits écrans */
+        @media (max-width: 600px) {
+            .card {
+                font-size: 1em; /* Réduire la taille du texte sur les petits écrans */
+            }
+        }
     </style>
 </head>
 <body>
@@ -67,20 +71,13 @@
             // Séparer chaque ligne en éléments (par exemple, "red,blue,assassin" -> ["red", "blue", "assassin"])
             const cards = row.split(',');
 
-            // Créer un div pour chaque ligne
-            const rowDiv = document.createElement('div');
-            rowDiv.classList.add('row');
-
             // Créer une carte pour chaque élément de la ligne
             cards.forEach(card => {
                 const cardElement = document.createElement('div');
                 cardElement.classList.add('card', card);
                 cardElement.textContent = card.charAt(0).toUpperCase() + card.slice(1); // Met la première lettre en majuscule
-                rowDiv.appendChild(cardElement);
+                container.appendChild(cardElement);
             });
-
-            // Ajouter la ligne au conteneur principal
-            container.appendChild(rowDiv);
         });
     }
 
