@@ -55,20 +55,31 @@
 </div>
 
 <script>
-    // Récupérer les données de l'URL (par exemple : ?data=red,blue,assassin,neutre)
+    // Récupérer les données de l'URL
     const urlParams = new URLSearchParams(window.location.search);
     const data = urlParams.get('data'); // Récupère la chaîne de caractères
 
+    // Vérification du format de 'data' (l'URL)
+    if (!data) {
+        alert('Aucune donnée trouvée dans l\'URL');
+    }
+
     // Convertir la chaîne en un tableau de lignes en utilisant "%0A"
-    const rows = data.split('%0A'); // Les lignes sont séparées par '%0A'
-    const grid = rows.map(row => row.split(',')); // Chaque ligne est divisée par ','
+    // Ce "%0A" est un encodage de saut de ligne, on le remplace par un saut de ligne normal
+    const rows = decodeURIComponent(data).split('\n'); // Séparation en lignes après décodage
+
+    // On va maintenant découper chaque ligne par des virgules
+    const grid = rows.map(row => row.split(','));
+
+    // Vérification : Assurez-vous que la grille est bien formée
+    console.log('Grille après séparation:', grid);
 
     // Déterminer le nombre de colonnes (en prenant la longueur de la première ligne)
     const numColumns = grid[0].length;
 
     // Définir dynamiquement le nombre de colonnes de la grille
     const container = document.getElementById('card-container');
-    container.style.gridTemplateColumns = `repeat(${numColumns +1}, ${numColumns+1})`; // Définit le nombre de colonnes
+    container.style.gridTemplateColumns = `repeat(${numColumns}, 1fr)`; // Définit le nombre de colonnes
 
     // Fonction pour créer les cartes dynamiquement
     function createCards(grid) {
