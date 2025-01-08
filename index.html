@@ -22,6 +22,7 @@
             box-sizing: border-box;
             display: grid;
             gap: 10px; /* Espace entre les cartes */
+            grid-auto-rows: 1fr; /* Maintenir l'aspect ratio */
         }
         .card {
             padding: 20px;
@@ -33,6 +34,7 @@
             justify-content: center;
             align-items: center;
             font-size: 1.2em; /* Taille de texte proportionnelle */
+            aspect-ratio: 1; /* Maintenir une forme carrée pour chaque carte */
         }
         .red { background-color: red; }
         .blue { background-color: blue; }
@@ -58,7 +60,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const data = urlParams.get('data'); // Récupère la chaîne de caractères
 
-    // Convertir la chaîne en un tableau de lignes en utilisant "\n"
+    // Convertir la chaîne en un tableau de lignes en utilisant "%0A"
     const rows = data.split('%0A'); // Les lignes sont séparées par '%0A'
     const grid = rows.map(row => row.split(',')); // Chaque ligne est divisée par ','
 
@@ -81,7 +83,6 @@
         });
     }
 
-    
     // Appeler la fonction pour créer les cartes à partir des données
     createCards(grid);
 </script>
