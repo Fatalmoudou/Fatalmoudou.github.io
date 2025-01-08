@@ -21,7 +21,6 @@
             padding: 20px;
             box-sizing: border-box;
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Créer une grille adaptative */
             gap: 10px; /* Espace entre les cartes */
         }
         .card {
@@ -33,7 +32,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            aspect-ratio: 1; /* Assurer que les cartes sont carrées */
             font-size: 1.2em; /* Taille de texte proportionnelle */
         }
         .red { background-color: red; }
@@ -61,18 +59,20 @@
     const data = urlParams.get('data'); // Récupère la chaîne de caractères
 
     // Convertir la chaîne en un tableau de lignes en utilisant "\n"
-    const rows = data.split('\n');
+    const rows = data.split('%0A'); // Les lignes sont séparées par '%0A'
+    const grid = rows.map(row => row.split(',')); // Chaque ligne est divisée par ','
+
+    // Déterminer le nombre de colonnes (en prenant la longueur de la première ligne)
+    const numColumns = grid[0].length;
+
+    // Définir dynamiquement le nombre de colonnes de la grille
+    const container = document.getElementById('card-container');
+    container.style.gridTemplateColumns = `repeat(${numColumns}, 1fr)`; // Définit le nombre de colonnes
 
     // Fonction pour créer les cartes dynamiquement
-    function createCards(rows) {
-        const container = document.getElementById('card-container');
-        
-        rows.forEach(row => {
-            // Séparer chaque ligne en éléments (par exemple, "red,blue,assassin" -> ["red", "blue", "assassin"])
-            const cards = row.split(',');
-
-            // Créer une carte pour chaque élément de la ligne
-            cards.forEach(card => {
+    function createCards(grid) {
+        grid.forEach(row => {
+            row.forEach(card => {
                 const cardElement = document.createElement('div');
                 cardElement.classList.add('card', card);
                 cardElement.textContent = card.charAt(0).toUpperCase() + card.slice(1); // Met la première lettre en majuscule
@@ -81,8 +81,8 @@
         });
     }
 
-    // Appeler la fonction pour créer les cartes à partir des lignes de données
-    createCards(rows);
+    // Appeler la fonction pour créer les cartes à partir des données
+    createCards(grid);
 </script>
 
 </body>
