@@ -68,7 +68,7 @@
 
     // Définir dynamiquement le nombre de colonnes de la grille
     const container = document.getElementById('card-container');
-    container.style.gridTemplateColumns = `repeat(${numColumns}, 1fr)`; // Définit le nombre de colonnes
+    container.style.gridTemplateColumns = `repeat(${numColumns +1}, ${numColumns+1})`; // Définit le nombre de colonnes
 
     // Fonction pour créer les cartes dynamiquement
     function createCards(grid) {
