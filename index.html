@@ -1,103 +1,48 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cartes QR Code</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                margin: 0;
-                background-color: white;
-                padding: 20px;
-            }
-            .card-container {
-                width: 100%;
-                max-width: 800px;
-                padding: 20px;
-                box-sizing: border-box;
-                display: grid;
-                gap: 10px; /* Espace entre les cartes */
-                grid-auto-rows: 1fr; /* Maintenir l'aspect ratio */
-            }
-            .card {
-                padding: 20px;
-                border-radius: 8px;
-                text-align: center;
-                font-weight: bold;
-                color: white;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 1.2em; /* Taille de texte proportionnelle */
-                aspect-ratio: 1; /* Maintenir une forme carrée pour chaque carte */
-            }
-            .red { background-color: red; }
-            .blue { background-color: blue; }
-            .assassin { background-color: black; }
-            .neutral { background-color: rgb(252, 252, 5); color: black; }
-    
-            /* Ajuster la taille des cartes sur les petits écrans */
-            @media (max-width: 600px) {
-                .card {
-                    font-size: 1em; /* Réduire la taille du texte sur les petits écrans */
-                }
-            }
-        </style>
-    </head>
-    <body>
-    
-    <div class="card-container" id="card-container">
-        <!-- Les cartes seront générées ici via JavaScript -->
-    </div>
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-key="title">Portfolio - À propos</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
-<script>
-    // Récupérer les données de l'URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const data = urlParams.get('data'); // Récupère la chaîne de caractères
+<!-- Navbar avec bouton langue -->
+<nav>
+  <ul>
+    <li><a href="index.html" data-key="about">À propos</a></li>
+    <li><a href="formations.html" data-key="education">Formation</a></li>
+    <li><a href="experiences.html" data-key="experience">Expériences</a></li>
+    <li><a href="projets.html" data-key="projects">Projets</a></li>
+    <li><a href="certifications.html" data-key="certifications">Certifications</a></li>
+    <li><a href="contact.html" data-key="contact">Contact</a></li>
+    <li><a href="files/CV.pdf" class="button-cv" download data-key="downloadCV">Télécharger CV</a></li>
+  </ul>
+  <button id="lang-toggle">EN</button>
+</nav>
 
-    // Vérification du format de 'data' (l'URL)
-    if (!data) {
-        alert('Aucune donnée trouvée dans l\'URL');
-    }
+<!-- Section À propos -->
+<section class="about">
+    <div class="about-photo" style="flex-shrink:0;">
+    <img src="assets/images/Fatalmoudou.jpg" alt="Fatalmoudou KONE" 
+         style="width:200px; height:200px; object-fit:cover; border-radius:50%; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+  </div>
+  <div class="container">
+    <h2 data-key="aboutTitle">À propos de moi</h2>
+    <h1 data-key="aboutName">Je suis Fatalmoudou KONE</h1>
+    <p data-key="aboutText">
+      Étudiante en ingénierie informatique à Télécom Nancy et passionnée par la Data Science, 
+      l’intelligence artificielle et le Big Data. J’aime explorer de nouvelles approches technologiques 
+      pour analyser, modéliser et valoriser les données afin d’apporter des solutions innovantes et concrètes.
+    </p>
+  </div>
+</section>
 
-    // Convertir la chaîne en un tableau de lignes en utilisant "%0A"
-    // Ce "%0A" est un encodage de saut de ligne, on le remplace par un saut de ligne normal
-    const rows = decodeURIComponent(data).split('\n'); // Séparation en lignes après décodage
 
-    // On va maintenant découper chaque ligne par des virgules
-    const grid = rows.map(row => row.split(','));
-
-    // Vérification : Assurez-vous que la grille est bien formée
-    console.log('Grille après séparation:', grid);
-
-    // Déterminer le nombre de colonnes (en prenant la longueur de la première ligne)
-    const numColumns = grid[0].length;
-
-    // Définir dynamiquement le nombre de colonnes de la grille
-    const container = document.getElementById('card-container');
-    container.style.gridTemplateColumns = `repeat(${numColumns}, 1fr)`; // Définit le nombre de colonnes
-
-    // Fonction pour créer les cartes dynamiquement
-    function createCards(grid) {
-        grid.forEach(row => {
-            row.forEach(card => {
-                const cardElement = document.createElement('div');
-                cardElement.classList.add('card', card);
-                cardElement.textContent = card.charAt(0).toUpperCase() + card.slice(1); // Met la première lettre en majuscule
-                container.appendChild(cardElement);
-            });
-        });
-    }
-
-    // Appeler la fonction pour créer les cartes à partir des données
-    createCards(grid);
-</script>
+<script src="assets/js/lang.js"></script>
+</body>
+</html>
 
 </body>
 </html>
