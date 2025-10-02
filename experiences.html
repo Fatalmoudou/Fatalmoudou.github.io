@@ -3,109 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Expériences - Portfolio</title>
+
+  <title data-key="experiences_title">Expériences - Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<nav>
+<nav id="navi">
   <ul>
-    <li><a href="index.html">À propos</a></li>
-    <li><a href="formations.html">Formation</a></li>
-    <li><a href="experiences.html">Expériences</a></li>
-    <li><a href="projets.html">Projets</a></li>
-    <li><a href="certifications.html">Certifications</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="files/CV.pdf" class="button-cv" download>Télécharger CV</a></li>
+    <li><a href="index.html" data-key="nav_a_propos">À propos</a></li>
+    <li><a href="formations.html" data-key="nav_formation">Formation</a></li>
+    <li><a href="experiences.html" data-key="nav_experiences">Expériences</a></li>
+    <li><a href="projets.html" data-key="nav_projets">Projets</a></li>
+    <li><a href="certifications.html" data-key="nav_certifications">Certifications</a></li>
+    <li><a href="contact.html" data-key="nav_contact">Contact</a></li>
+    <li><a href="files/cv.pdf" class="button-cv" data-key="nav_cv" download>Télécharger CV</a></li>
   </ul>
+    <button id="lang-toggle">EN</button>
+
 </nav>
 
-<section>
-  <h2>Expériences</h2>
+<section id="experiences-section">
+  <h2 data-key="experiences_title">Expériences</h2>
 
-  <!-- EXPÉRIENCES / EXPERIENCES -->
+  <div class="card">
+    <h3 data-key="exp1Title">Analyse et optimisation d’un RAG – AREAL</h3>
+    <span data-key="exp1Date">Sept 2025 – présent</span>
+    <p data-key="exp1Desc">Amélioration des performances d’un <strong>chatbot interne</strong>.</p>
+  </div>
 
-<div class="card">
-  <h3 data-key="exp1Title">Analyse et optimisation d’un RAG – AREAL</h3>
-  <span data-key="exp1Date">Sept 2025 – présent</span>
-  <p data-key="exp1DescFR">
-    Amélioration des performances d’un <strong>chatbot interne</strong>.
-  </p>
-  
- 
-</div>
+  <div class="card">
+    <h3 data-key="exp2Title">INRIA – Nancy</h3>
+    <span data-key="exp2Date">Juin – Août 2025</span>
+    <p data-key="exp2Desc">
+      <strong data-key="exp2Contexte">Contexte :</strong> Stage sur l’acquisition et l’organisation de données multimodales pour une étude en robotique sur le robot Shelfy.  <br>
+      <strong data-key="exp2Methodes">Méthodes :</strong> Organisation de séances d’enregistrement, utilisation de YOLO et OpenCV pour le suivi des objets et des personnes. <br> 
+      <strong data-key="exp2Resultats">Résultats :</strong> Base de données de 10 To structurée, avec reconnaissance faciale et anonymisation des sujets prête pour analyse.
+    </p>
+    <img src="assets/images/shelfy.png" alt="Robot Shelfy" style="width:100%; max-width:300px; height:auto; margin-top:0.5em;">
+  </div>
 
-<div class="card">
-  <h3 data-key="exp2Title">INRIA – Nancy</h3>
-  <span data-key="exp2Date">Juin – Août 2025</span>
- <p data-key="exp2DescFR">
-    <strong>Contexte :</strong> Stage sur l’acquisition et l’organisation de données multimodales pour une étude en robotique sur le robot Shelfy.  <br>
-    <strong>Méthodes :</strong> Organisation de séances d’enregistrement, utilisation de YOLO et OpenCV pour le suivi des objets et des personnes. <br> 
-    <strong>Résultats :</strong> Base de données de 10 To structurée, avec reconnaissance faciale et anonymisation des sujets prête pour analyse.
-  </p>
+  <div class="card">
+    <h3 data-key="exp3Title">CRAN – Université de Lorraine</h3>
+    <span data-key="exp3Date">Fév – Mai 2025</span>
+    <p data-key="exp3Desc">
+      <strong data-key="exp3Contexte">Contexte :</strong> Test de marche de 6 minutes utilisé pour évaluer la mobilité des patients.  <br>
+      <strong data-key="exp3Methodes">Méthodes :</strong> Application du filtre de Madgwick pour corriger les trajectoires des capteurs.  <br>
+      <strong data-key="exp3Resultats">Résultats :</strong> Précision accrue de 20% dans l’analyse des trajectoires, permettant une meilleure évaluation clinique.
+    </p>
+    <img src="assets/images/Capture d'écran 2025-05-16 215900.png" alt="Trajectoire du patient avec une de nos méthodes" style="width:100%; max-width:300px; height:auto; margin-top:0.5em;">
+  </div>
 
-  <img src="assets/images/shelfy.png" alt="Robot Shelfy" style="width:100%; max-width:300px; height:auto; margin-top:0.5em;">
-</div>
+  <div class="card">
+    <h3 data-key="exp4Title">Directrice des systèmes d'information – TELECOM Nancy Services</h3>
+    <span data-key="exp4Date">2023 – 2024</span>
+    <p data-key="exp4Desc">
+      <strong data-key="exp4Contexte">Contexte :</strong> Gestion IT pour la Junior Entreprise de TELECOM Nancy, comprenant 20 collaborateurs et plusieurs projets internes. <br> 
+      <strong data-key="exp4Methodes">Méthodes :</strong> Administration serveur, support utilisateur, mise à jour et maintenance du site web pour améliorer la lisibilité et l’accessibilité.  <br>
+      <strong data-key="exp4Resultats">Résultats :</strong> Disponibilité accrue du système, site web plus clair et accessible, satisfaction globale des membres améliorée.
+    </p>
+    <a href="https://tnservices.fr/" target="_blank" data-key="exp4Link">Voir le site</a>
+  </div>
 
-<div class="card">
-  <h3 data-key="exp3Title">CRAN – Université de Lorraine</h3>
-  <span data-key="exp3Date">Fév – Mai 2025</span>
-  <p data-key="exp3DescFR">
-    <strong>Contexte :</strong> Test de marche de 6 minutes utilisé pour évaluer la mobilité des patients.  <br>
-    <strong>Méthodes :</strong> Application du filtre de Madgwick pour corriger les trajectoires des capteurs.  <br>
-    <strong>Résultats :</strong> Précision accrue de 20% dans l’analyse des trajectoires, permettant une meilleure évaluation clinique.
-  </p>
-   <img src="assets/images/Capture d'écran 2025-05-16 215900.png" alt="Trajectoire du patient avec une de nos méthodes" style="width:100%; max-width:300px; height:auto; margin-top:0.5em;"">
-</div>
+  <div class="card">
+    <h3 data-key="exp5Title">Stagiaire opérationnel – KOSY Appart’Hôtel, Nancy</h3>
+    <span data-key="exp5Date">Juillet 2024</span>
+    <p data-key="exp5Desc">
+      <strong data-key="exp5Contexte">Contexte :</strong> Stage opérationnel en accueil et coordination d’appart’hôtels.  <br>
+      <strong data-key="exp5Methodes">Méthodes :</strong> Nettoyage et organisation des chambres, organisation des plannings, assistance à la clientèle, visites, inventaires.  <br>
+      <strong data-key="exp5Resultats">Résultats :</strong> Amélioration de la satisfaction clients et optimisation de la coordination interne.
+    </p>
+    <a href="https://www.kosy-apparthotels.com/nancy-maison-des-chercheurs/" target="_blank" data-key="exp5Link">Voir le site</a>
+  </div>
 
-<div class="card">
-  <h3 data-key="exp4Title">Directrice des systèmes d'information – TELECOM Nancy Services</h3>
-  <span data-key="exp4Date">2023 – 2024</span>
-  <p data-key="exp4DescFR">
-    <strong>Contexte :</strong> Gestion IT pour la Junior Entreprise de TELECOM Nancy, comprenant 20 collaborateurs et plusieurs projets internes. <br> 
-    <strong>Méthodes :</strong> Administration serveur, support utilisateur, mise à jour et maintenance du site web pour améliorer la lisibilité et l’accessibilité.  <br>
-    <strong>Résultats :</strong> Disponibilité accrue du système, site web plus clair et accessible, satisfaction globale des membres améliorée.
-  </p>
- 
-  <a href="https://tnservices.fr/" target="_blank" data-key="exp4Link">Voir le site</a>
-</div>
+  <div class="card">
+    <h3 data-key="exp6Title">Bénévole – Afev</h3>
+    <span data-key="exp6Date">2023 – 2024</span>
+    <p data-key="exp6Desc">
+      <strong data-key="exp6Contexte">Contexte :</strong> Accompagnement scolaire pour d'une élève en difficulté.  <br>
+      <strong data-key="exp6Methodes">Méthodes :</strong> Tutorat personnalisé et suivi des progrès.  <br>
+      <strong data-key="exp6Resultats">Résultats :</strong> Amélioration moyenne des résultats de +2 points.
+    </p>
+    <a href="https://afev.org/actions/mentorat" target="_blank" data-key="exp6Link">Voir le site</a>
+  </div>
 
-<div class="card">
-  <h3 data-key="exp5Title">Stagiaire opérationnel – KOSY Appart’Hôtel, Nancy</h3>
-  <span data-key="exp5Date">Juillet 2024</span>
-  <p data-key="exp5DescFR">
-    <strong>Contexte :</strong> Stage opérationnel en accueil et coordination d’appart’hôtels.  <br>
-    <strong>Méthodes :</strong> Nettoyage et organisation des chambres, organisation des plannings, assistance à la clientèle, visites, inventaires.  <br>
-    <strong>Résultats :</strong> Amélioration de la satisfaction clients et optimisation de la coordination interne.
-  </p>
- 
-  <a href="https://www.kosy-apparthotels.com/nancy-maison-des-chercheurs/" target="_blank" data-key="exp5Link">Voir le site </a>
-</div>
-
-<div class="card">
-  <h3 data-key="exp6Title">Bénévole – Afev</h3>
-  <span data-key="exp6Date">2023 – 2024</span>
-  <p data-key="exp6DescFR">
-    <strong>Contexte :</strong> Accompagnement scolaire pour d'une élève en difficulté.    <br>
-    <strong>Méthodes :</strong> Tutorat personnalisé et suivi des progrès.  <br>
-    <strong>Résultats :</strong> Amélioration moyenne des résultats de +2 points.
-  </p>
- 
-  <a href="https://afev.org/actions/mentorat?utm_source=google&utm_medium=adgrants&utm_campaign=asso_afev_mentorat&utm_source=google&utm_medium=adgrants&utm_campaign=AfC_Ggrants_Brand&utm_content=125628462417&utm_term=afev&gad_source=1&gad_campaignid=14805046073&gbraid=0AAAAADn2Ke40g1Ypje3oY5k6AQR9JyjkR&gclid=CjwKCAjw_-3GBhAYEiwAjh9fUNbiCfM4AIp5quaS4WjmsMFDWfkoYjL-VVYwphc08RzYyvxMCkuvrBoCc5YQAvD_BwE" target="_blank" data-key="exp6Link">Voir le site</a>
-</div>
-
-<div class="card">
-  <h3 data-key="exp7Title">Tutrice en maths appliquées – Université Grenoble Alpes</h3>
-  <span data-key="exp7Date">Sept – Déc 2022</span>
-  <p data-key="exp7DescFR">
-    <strong>Contexte :</strong> Tutorat pour 30 étudiants en mathématiques appliquées.  <br>
-    <strong>Méthodes :</strong> Animation de TD, exercices guidés et suivi individualisé.  <br>
-    <strong>Résultats :</strong> Taux de réussite final de 60%, meilleure compréhension des concepts pour la majorité des étudiants.
-  </p>
-  
-</div>
+  <div class="card">
+    <h3 data-key="exp7Title">Tutrice en maths appliquées – Université Grenoble Alpes</h3>
+    <span data-key="exp7Date">Sept – Déc 2022</span>
+    <p data-key="exp7Desc">
+      <strong data-key="exp7Contexte">Contexte :</strong> Tutorat pour 30 étudiants en mathématiques appliquées.  <br>
+      <strong data-key="exp7Methodes">Méthodes :</strong> Animation de TD, exercices guidés et suivi individualisé.  <br>
+      <strong data-key="exp7Resultats">Résultats :</strong> Taux de réussite final de 60%, meilleure compréhension des concepts pour la majorité des étudiants.
+    </p>
+  </div>
 
 </section>
 
+<script src="assets/js/lang.js"></script>
 </body>
 </html>

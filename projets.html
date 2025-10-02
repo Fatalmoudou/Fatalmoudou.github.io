@@ -3,93 +3,91 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projets - Portfolio</title>
+
+  <title data-key="projets_title">Projets - Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<nav>
+<nav id="navi">
   <ul>
-    <li><a href="index.html">À propos</a></li>
-    <li><a href="formations.html">Formation</a></li>
-    <li><a href="experiences.html">Expériences</a></li>
-    <li><a href="projets.html">Projets</a></li>
-    <li><a href="certifications.html">Certifications</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="files/CV.pdf" class="button-cv" download>Télécharger CV</a></li>
+    <li><a href="index.html" data-key="nav_a_propos">À propos</a></li>
+    <li><a href="formations.html" data-key="nav_formation">Formation</a></li>
+    <li><a href="experiences.html" data-key="nav_experiences">Expériences</a></li>
+    <li><a href="projets.html" data-key="nav_projets">Projets</a></li>
+    <li><a href="certifications.html" data-key="nav_certifications">Certifications</a></li>
+    <li><a href="contact.html" data-key="nav_contact">Contact</a></li>
+    <li><a href="files/cv.pdf" class="button-cv" data-key="nav_cv" download>Télécharger CV</a></li>
   </ul>
+    <button id="lang-toggle">EN</button>
+
 </nav>
 
-<section>
-  <h2>Projets</h2>
-
-  <!-- PROJETS / PROJECTS -->
 <section id="projects-section">
-  <h2>Projets</h2>
+  <h2 data-key="projets_title">Projets</h2>
 
   <!-- Projet 1 : Détection de fraude -->
   <div class="card">
-    <h3>Détection de fraude</h3>
-    <span>Machine Learning & Big Data</span>
-    <p><strong>Contexte :</strong> Projet académique pour détecter les transactions frauduleuses à partir d’un dataset volumineux.</p>
-    <p><strong>Méthodes :</strong> Utilisation de Kafka pour le streaming de données, Spark pour le traitement distribué, et modèles ML avec Python.</p>
-    <p><strong>Résultats :</strong> Système capable de détecter les anomalies en temps réel avec un taux de précision supérieur à 90%.</p>
+    <h3 data-key="projet1_title">Détection de fraude</h3>
+    <span data-key="projet1_span">Machine Learning & Big Data</span>
+    <p data-key="projet1_contexte"><strong data-key="contexte">Contexte :</strong> Projet académique pour détecter les transactions frauduleuses à partir d’un dataset volumineux.</p>
+    <p data-key="projet1_methodes"><strong data-key="methodes">Méthodes :</strong> Utilisation de Kafka pour le streaming de données, Spark pour le traitement distribué, et modèles ML avec Python.</p>
+    <p data-key="projet1_resultats"><strong data-key="resultats">Résultats :</strong> Système capable de détecter les anomalies en temps réel avec un taux de précision supérieur à 90%.</p>
     <img src="assets/images/fraude.png" alt="Détection de fraude" style="width:100%; max-width:300px; height:auto; margin-top:0.5em;">
   </div>
 
   <!-- Projet 2 : Agent IA Pacman -->
   <div class="card">
-    <h3>Agent IA Pacman</h3>
-    <span>Intelligence Artificielle</span>
-    <p><strong>Contexte :</strong> Développement d’un agent intelligent capable de jouer à Pacman.</p>
-    <p><strong>Méthodes :</strong> Algorithmes A* et Minimax pour la planification et la prise de décision.</p>
-    <p><strong>Résultats :</strong> Agent performant capable de compléter les niveaux avec un score élevé et un comportement stratégique.</p>
+    <h3 data-key="projet2_title">Agent IA Pacman</h3>
+    <span data-key="projet2_span">Intelligence Artificielle</span>
+    <p data-key="projet2_contexte"><strong data-key="contexte">Contexte :</strong> Développement d’un agent intelligent capable de jouer à Pacman.</p>
+    <p data-key="projet2_methodes"><strong data-key="methodes">Méthodes :</strong> Algorithmes A* et Minimax pour la planification et la prise de décision.</p>
+    <p data-key="projet2_resultats"><strong data-key="resultats">Résultats :</strong> Agent performant capable de compléter les niveaux avec un score élevé et un comportement stratégique.</p>
     <img src="assets/images/pacman.jpg" alt="Agent IA Pacman" style="width:100%; max-width:300px; height:auto; margin-top:0.5em;">
   </div>
 
   <!-- Projet 3 : Dashboards interactifs -->
   <div class="card">
-    <h3>Dashboards interactifs</h3>
-    <span>Visualisation et gestion de données</span>
-    <p><strong>Contexte :</strong> Projet pour créer des dashboards permettant de visualiser des données massives.</p>
-    <p><strong>Méthodes :</strong> Utilisation de Pandas et Matplotlib pour la préparation et la visualisation des données.</p>
-    <p><strong>Résultats :</strong> Dashboards interactifs permettant une analyse rapide et claire des indicateurs clés.</p>
+    <h3 data-key="projet3_title">Dashboards interactifs</h3>
+    <span data-key="projet3_span">Visualisation et gestion de données</span>
+    <p data-key="projet3_contexte"><strong data-key="contexte">Contexte :</strong> Projet pour créer des dashboards permettant de visualiser des données massives.</p>
+    <p data-key="projet3_methodes"><strong data-key="methodes">Méthodes :</strong> Utilisation de Pandas et Matplotlib pour la préparation et la visualisation des données.</p>
+    <p data-key="projet3_resultats"><strong data-key="resultats">Résultats :</strong> Dashboards interactifs permettant une analyse rapide et claire des indicateurs clés.</p>
     <img src="assets/images/Capture d'écran 2025-10-01 002849.png" alt="Dashboards" style="width:100%; max-width:300px; height:auto; margin-top:0.5em;">
   </div>
 
   <!-- Projet 4 : Exploration de données biomédicales -->
   <div class="card">
-    <h3>Exploration de données biomédicales</h3>
-    <span>Bioinformatique</span>
-    <p><strong>Contexte :</strong> Analyse de bases de données Uniprot et DrugBank pour identifier des interactions médicamenteuses.</p>
-    <p><strong>Méthodes :</strong> Scripts Python pour extraction et traitement des données, visualisation et analyse statistique.</p>
-    <p><strong>Résultats :</strong> Rapport d’analyse mettant en évidence les interactions clés entre protéines et médicaments.</p>
+    <h3 data-key="projet4_title">Exploration de données biomédicales</h3>
+    <span data-key="projet4_span">Bioinformatique</span>
+    <p data-key="projet4_contexte"><strong data-key="contexte">Contexte :</strong> Analyse de bases de données Uniprot et DrugBank pour identifier des interactions médicamenteuses.</p>
+    <p data-key="projet4_methodes"><strong data-key="methodes">Méthodes :</strong> Scripts Python pour extraction et traitement des données, visualisation et analyse statistique.</p>
+    <p data-key="projet4_resultats"><strong data-key="resultats">Résultats :</strong> Rapport d’analyse mettant en évidence les interactions clés entre protéines et médicaments.</p>
     <img src="assets/images/Capture d'écran 2025-10-01 002621.png" alt="Bioinformatique" style="width:100%; max-width:300px; height:auto; margin-top:0.5em;">
   </div>
 
   <!-- Projet 5 : Compilateur Mini-Python en Java -->
   <div class="card">
-    <h3>Compilateur Mini-Python en Java</h3>
-    <span>Développement logiciel</span>
-    <p><strong>Contexte :</strong> Projet académique visant à créer un compilateur simplifié pour un sous-ensemble de Python.</p>
-    <p><strong>Méthodes :</strong> Analyse lexicale et syntaxique, génération de bytecode en Java.</p>
-    <p><strong>Résultats :</strong> Compilateur fonctionnel capable d’exécuter des programmes simples avec gestion des erreurs de syntaxe.</p>
+    <h3 data-key="projet5_title">Compilateur Mini-Python en Java</h3>
+    <span data-key="projet5_span">Développement logiciel</span>
+    <p data-key="projet5_contexte"><strong data-key="contexte">Contexte :</strong> Projet académique visant à créer un compilateur simplifié pour un sous-ensemble de Python.</p>
+    <p data-key="projet5_methodes"><strong data-key="methodes">Méthodes :</strong> Analyse lexicale et syntaxique, génération de bytecode en Java.</p>
+    <p data-key="projet5_resultats"><strong data-key="resultats">Résultats :</strong> Compilateur fonctionnel capable d’exécuter des programmes simples avec gestion des erreurs de syntaxe.</p>
     <img src="assets/images/syntax_tree.png" alt="Mini-Python Java" style="width:100%; max-width:300px; height:auto; margin-top:0.5em;">
   </div>
 
   <!-- Projet 6 : Application Java pour réviser le TOEIC -->
   <div class="card">
-    <h3>Application Java – Révision TOEIC</h3>
-    <span>Développement logiciel & Education</span>
-    <p><strong>Contexte :</strong> Création d’une application pour aider à la préparation du TOEIC.</p>
-    <p><strong>Méthodes :</strong> Application Java avec interface graphique, quiz interactifs, suivi des scores et rappels personnalisés.</p>
-    <p><strong>Résultats :</strong> Application fonctionnelle permettant aux utilisateurs de réviser le vocabulaire et les exercices de compréhension de manière interactive.</p>
+    <h3 data-key="projet6_title">Application Java – Révision TOEIC</h3>
+    <span data-key="projet6_span">Développement logiciel & Education</span>
+    <p data-key="projet6_contexte"><strong data-key="contexte">Contexte :</strong> Création d’une application pour aider à la préparation du TOEIC.</p>
+    <p data-key="projet6_methodes"><strong data-key="methodes">Méthodes :</strong> Application Java avec interface graphique, quiz interactifs, suivi des scores et rappels personnalisés.</p>
+    <p data-key="projet6_resultats"><strong data-key="resultats">Résultats :</strong> Application fonctionnelle permettant aux utilisateurs de réviser le vocabulaire et les exercices de compréhension de manière interactive.</p>
     <img src="assets/images/Capture d'écran 2025-03-21 013730.png" alt="TOEIC Java App" style="width:100%; max-width:300px; height:auto; margin-top:0.5em;">
   </div>
 
 </section>
 
-</section>
-
+<script src="assets/js/lang.js"></script>
 </body>
 </html>

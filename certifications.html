@@ -3,82 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Certifications - Portfolio</title>
+
+  <title data-key="certifications_title">Certifications - Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<nav>
+<nav id="navi">
   <ul>
-    <li><a href="index.html">À propos</a></li>
-    <li><a href="formations.html">Formation</a></li>
-    <li><a href="experiences.html">Expériences</a></li>
-    <li><a href="projets.html">Projets</a></li>
-    <li><a href="certifications.html">Certifications</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="files/CV.pdf" class="button-cv" download>Télécharger CV</a></li>
+    <li><a href="index.html" data-key="nav_a_propos">À propos</a></li>
+    <li><a href="formations.html" data-key="nav_formation">Formation</a></li>
+    <li><a href="experiences.html" data-key="nav_experiences">Expériences</a></li>
+    <li><a href="projets.html" data-key="nav_projets">Projets</a></li>
+    <li><a href="certifications.html" data-key="nav_certifications">Certifications</a></li>
+    <li><a href="contact.html" data-key="nav_contact">Contact</a></li>
+    <li><a href="files/cv.pdf" class="button-cv" data-key="nav_cv" download>Télécharger CV</a></li>
   </ul>
+    <button id="lang-toggle">EN</button>
+
 </nav>
 
 <!-- CERTIFICATIONS -->
 <section id="certifications-section">
-  <h2>Certifications</h2>
+  <h2 data-key="certifications_title">Certifications</h2>
 
   <!-- Certification 1 -->
   <div class="card">
-    <h3>IBM – Data Engineering</h3>
-    <span>En cours</span>
-    <p>Acquisition de compétences avancées en gestion de données, pipelines ETL, manipulation de gros volumes de données avec Python et SQL. Développement de rigueur analytique et capacité à résoudre des problèmes complexes.</p>
+    <h3 data-key="cert1_title">IBM – Data Engineering</h3>
+    <span data-key="cert1_status">En cours</span>
+    <p data-key="cert1_desc">Acquisition de compétences avancées en gestion de données, pipelines ETL, manipulation de gros volumes de données avec Python et SQL. Développement de rigueur analytique et capacité à résoudre des problèmes complexes.</p>
   </div>
 
   <!-- Certification 2 -->
   <div class="card">
-    <h3>Microsoft – AI & ML Engineering</h3>
-    <span>En cours</span>
-    <p>Apprentissage de techniques d’apprentissage automatique et deep learning, utilisation de bibliothèques comme scikit-learn et PyTorch, conception et entraînement de modèles pour résoudre des problèmes concrets. Développement de l’autonomie et de l’esprit analytique.</p>
+    <h3 data-key="cert2_title">Microsoft – AI & ML Engineering</h3>
+    <span data-key="cert2_status">En cours</span>
+    <p data-key="cert2_desc">Apprentissage de techniques d’apprentissage automatique et deep learning, utilisation de bibliothèques comme scikit-learn et PyTorch, conception et entraînement de modèles pour résoudre des problèmes concrets. Développement de l’autonomie et de l’esprit analytique.</p>
   </div>
 
   <!-- Certification 3 -->
   <div class="card">
-    <h3>Cisco Network Academy – Introduction à la Data Science</h3>
-    <span>Réussie</span>
-    <p>Développement d’une compréhension globale des flux de données, de l’acquisition à l’analyse. Utilisation d’outils pour organiser et préparer les datasets, initiation à la visualisation et aux bases de données.</p>
-    <a href="https://www.credly.com/badges/3e09e345-8041-403e-a478-6b496af5d293/public_url" target="_blank">Voir le certificat</a>
+    <h3 data-key="cert3_title">Cisco Network Academy – Introduction à la Data Science</h3>
+    <span data-key="cert3_status">Réussie</span>
+    <p data-key="cert3_desc">Développement d’une compréhension globale des flux de données, de l’acquisition à l’analyse. Utilisation d’outils pour organiser et préparer les datasets, initiation à la visualisation et aux bases de données.</p>
+    <a href="https://www.credly.com/badges/3e09e345-8041-403e-a478-6b496af5d293/public_url" target="_blank" data-key="cert3_link">Voir le certificat</a>
   </div>
 
   <!-- Certification 4 -->
   <div class="card">
-    <h3>MOOC Gestion de projet</h3>
-    <span>Réussie</span>
-    <p>Apprentissage de la planification et du suivi de projets, organisation des tâches, définition des priorités, gestion du temps et coordination d’équipe.</p>
-    <a href="https://certification.gestiondeprojet.pm/GdP22AP/GdP22PC-KOtEOavBA.pdf" target="_blank">Voir le certificat / View certificate</a>
+    <h3 data-key="cert4_title">MOOC Gestion de projet</h3>
+    <span data-key="cert4_status">Réussie</span>
+    <p data-key="cert4_desc">Apprentissage de la planification et du suivi de projets, organisation des tâches, définition des priorités, gestion du temps et coordination d’équipe.</p>
+    <a href="https://certification.gestiondeprojet.pm/GdP22AP/GdP22PC-KOtEOavBA.pdf" target="_blank" data-key="cert4_link">Voir le certificat / View certificate</a>
   </div>
 
   <!-- Certification 5 -->
   <div class="card">
-    <h3>Pix – Prévention des risques numériques</h3>
-    <span>Réussie</span>
-    <p>Développement de compétences numériques essentielles : sécurité des données, protection de la vie privée, détection des menaces en ligne et évaluation critique de l’information.</p>
+    <h3 data-key="cert5_title">Pix – Prévention des risques numériques</h3>
+    <span data-key="cert5_status">Réussie</span>
+    <p data-key="cert5_desc">Développement de compétences numériques essentielles : sécurité des données, protection de la vie privée, détection des menaces en ligne et évaluation critique de l’information.</p>
     <img src="assets/images/Capture d'écran 2025-10-01 010354.png" alt="Certification Pix" style="max-width:300px; height:auto; margin-top:0.5em;">
   </div>
 
   <!-- Certification 6 -->
   <div class="card">
-    <h3>Croix-Rouge – Premiers secours</h3>
-    <span>Réussie</span>
-    <p>Acquisition de compétences pratiques pour intervenir efficacement en situations d’urgence : premiers soins, sang-froid, prise d’initiative et sens des responsabilités.</p>
+    <h3 data-key="cert6_title">Croix-Rouge – Premiers secours</h3>
+    <span data-key="cert6_status">Réussie</span>
+    <p data-key="cert6_desc">Acquisition de compétences pratiques pour intervenir efficacement en situations d’urgence : premiers soins, sang-froid, prise d’initiative et sens des responsabilités.</p>
     <img src="assets/images/Capture d'écran 2025-10-01 010502.png" alt="Premiers secours" style="max-width:300px; height:auto; margin-top:0.5em;">
   </div>
 
   <!-- Certification 7 -->
   <div class="card">
-    <h3>MOOC INRS – Santé et sécurité au travail</h3>
-    <span>Réussie</span>
-    <p>Développement de connaissances sur la prévention des risques professionnels, sécurité au travail, sensibilisation aux bonnes pratiques et attention aux détails dans l’organisation d’activités.</p>
+    <h3 data-key="cert7_title">MOOC INRS – Santé et sécurité au travail</h3>
+    <span data-key="cert7_status">Réussie</span>
+    <p data-key="cert7_desc">Développement de connaissances sur la prévention des risques professionnels, sécurité au travail, sensibilisation aux bonnes pratiques et attention aux détails dans l’organisation d’activités.</p>
     <img src="assets/images/Capture d'écran 2025-10-01 010336.png" alt="MOOC INRS" style="max-width:300px; height:auto; margin-top:0.5em;">
   </div>
 </section>
 
-
+<script src="assets/js/lang.js"></script>
 </body>
 </html>

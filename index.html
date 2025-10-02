@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title data-key="title">Portfolio - À propos</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -11,13 +12,13 @@
 <!-- Navbar avec bouton langue s'adaptant à la taille de l'écran -->
 <nav id="navi">
   <ul>
-    <li><a href="index.html" data-key="about">À propos</a></li>
-    <li><a href="formations.html" data-key="education">Formation</a></li>
-    <li><a href="experiences.html" data-key="experience">Expériences</a></li>
-    <li><a href="projets.html" data-key="projects">Projets</a></li>
-    <li><a href="certifications.html" data-key="certifications">Certifications</a></li>
-    <li><a href="contact.html" data-key="contact">Contact</a></li>
-    <li><a href="files/CV.pdf" class="button-cv" download data-key="downloadCV">Télécharger CV</a></li>
+    <li><a href="index.html" data-key="nav_a_propos">À propos</a></li>
+    <li><a href="formations.html" data-key="nav_formation">Formation</a></li>
+    <li><a href="experiences.html" data-key="nav_experiences">Expériences</a></li>
+    <li><a href="projets.html" data-key="nav_projets">Projets</a></li>
+    <li><a href="certifications.html" data-key="nav_certifications">Certifications</a></li>
+    <li><a href="contact.html" data-key="nav_contact">Contact</a></li>
+    <li><a href="files/cv.pdf" class="button-cv" data-key="nav_cv" download>Télécharger CV</a></li>
   </ul>
   <button id="lang-toggle">EN</button>
 </nav>
@@ -25,23 +26,20 @@
 <!-- Section À propos -->
 <section class="about">
     <div class="about-photo" style="flex-shrink:0;">
-    <img src="assets/images/Fatalmoudou.jpg" alt="Fatalmoudou KONE" 
-         style="width:200px; height:200px; object-fit:cover; border-radius:50%; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
-  </div>
-  <div class="container">
-    <h2 data-key="aboutTitle">À propos de moi</h2>
-    <h1 data-key="aboutName">Je suis Fatalmoudou KONE</h1>
-    <p data-key="aboutText">
-      Étudiante en ingénierie informatique à Télécom Nancy et passionnée par la Data Science, 
-      l’intelligence artificielle et le Big Data. J’aime explorer de nouvelles approches technologiques 
-      pour analyser, modéliser et valoriser les données afin d’apporter des solutions innovantes et concrètes.
-    </p>
-  </div>
+      <img src="assets/images/Fatalmoudou.jpg" alt="Fatalmoudou KONE" 
+           style="width:200px; height:200px; object-fit:cover; border-radius:50%; box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+    </div>
+    <div class="container">
+      <h2 data-key="about_title">À propos de moi</h2>
+      <h1 data-key="about_name">Je suis Fatalmoudou KONE</h1>
+      <p data-key="about_text">
+        Étudiante en ingénierie informatique à Télécom Nancy et passionnée par la Data Science, 
+        l’intelligence artificielle et le Big Data. J’aime explorer de nouvelles approches technologiques 
+        pour analyser, modéliser et valoriser les données afin d’apporter des solutions innovantes et concrètes.
+      </p>
+    </div>
 </section>
-
 
 <script src="assets/js/lang.js"></script>
 </body>
 </html>
-
-

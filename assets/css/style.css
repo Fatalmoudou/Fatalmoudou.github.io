@@ -17,6 +17,39 @@ img {
   max-width: 100%;
   height: auto;
 }
+#lang-toggle {
+  position: relative;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color:white;
+  color: blue;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Tooltip */
+#lang-toggle::after {
+  content: "Switch to English/ Passer en Français";
+  position: absolute;
+  bottom: 120%; /* au-dessus du bouton */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0,0,0,0.75);
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 0.8em;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+/* Afficher le tooltip au hover */
+#lang-toggle:hover::after {
+  opacity: 1;
+}
 
 
 /* Navbar horizontale par défaut */
@@ -66,7 +99,7 @@ img {
 
 
 /* Bouton CV */
-.button-cv { display: inline-block; padding: 10px 20px; background: #1e3c6e; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+.button-cv { display: inline-block; padding: 10px 20px; background:white; color: blue; text-decoration: none; border-radius: 5px; margin-top: 10px; }
 .button-cv:hover { background: #163058; }
 
 /* Cards pour projets / formations */
