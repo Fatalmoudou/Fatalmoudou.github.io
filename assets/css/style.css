@@ -18,28 +18,18 @@ img {
   height: auto;
 }
 
-/* Navbar par défaut */
-nav#navi ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  padding: 0;
+
+
+
+.burger {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
 }
 
-/* Pour les petits écrans */
 @media (max-width: 768px) {
-  nav#navi ul {
-    flex-direction: column;   /* vertical */
-    display: none;            /* cachée par défaut, affichée avec le burger */
-  }
-  
-  nav#navi.active ul {
-    display: flex;            /* affichage quand menu ouvert */
-  }
-  
-  /* Style des liens */
-  nav#navi ul li {
-    margin: 10px 0;
+  .burger {
+    display: block;
   }
 }
 

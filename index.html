@@ -10,6 +10,7 @@
 
 <!-- Navbar avec bouton langue -->
 <nav>
+  <div class="burger" onclick="toggleMenu()">☰</div>
   <ul>
     <li><a href="index.html" data-key="about">À propos</a></li>
     <li><a href="formations.html" data-key="education">Formation</a></li>
@@ -41,8 +42,12 @@
 
 
 <script src="assets/js/lang.js"></script>
+<script>
+function toggleMenu() {
+  document.getElementById("navi").classList.toggle("active");
+}
+</script>
 </body>
 </html>
 
-</body>
-</html>
+
