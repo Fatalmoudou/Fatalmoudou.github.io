@@ -19,8 +19,15 @@ img {
 }
 
 
+/* Navbar par défaut */
+#navi ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+}
 
-
+/* Cacher le menu sur mobile et afficher burger */
 .burger {
   display: none;
   font-size: 2em;
@@ -28,10 +35,18 @@ img {
 }
 
 @media (max-width: 768px) {
+  #navi ul {
+    display: none;   /* caché par défaut */
+    flex-direction: column;
+  }
+  #navi.active ul {
+    display: flex;   /* affiché quand burger cliqué */
+  }
   .burger {
     display: block;
   }
 }
+
 
 .container {
   width: 90%;      /* au lieu d'une largeur fixe */
