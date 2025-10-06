@@ -33,44 +33,60 @@ const translations = {
     diplome_title: "Diplôme d'ingénieur en Informatique",
     diplome_span: "IAMD – Télécom Nancy",
     diplome_specialisation: "Spécialisation en Intelligence Artificielle et Big Data.",
-    diplome_detail:" L’approfondissement IAMD forme des ingénieurs capables de traiter des données massives, d’implémenter des modèles d’IA, et de travailler sur des projets réels.",
+    diplome_cours: "Cours : Machine Learning, Technologies Big Data, Visualisation de données, Deep learning",
+    diplome_desc:" L’approfondissement IAMD forme des ingénieurs capables de traiter des données massives, d’implémenter des modèles d’IA, et de travailler sur des projets réels.",
+
+
     master_title: "Master en Mathématiques et Applications",
     master_span: "Université de Lorraine – Nancy",
     master_specialisation: "Spécialisation en Ingénierie Mathématique pour la Science des Données.",
-    master_detail: "Ce master offre une formation orientée vers les mathématiques appliquées et le traitement des données.",
+    master_cours: "Cours : Apprentissage statistique, Optimisation, Processus stochastiques, Mathématiques financières.",
+    master_desc: "Ce master offre une formation orientée vers les mathématiques appliquées et le traitement des données.",
+
     licence_info_title: "Licence en Informatique, mineure Psychologie",
     licence_info_span: "Université Paris 8",
-    licence_info_specialisation: "Formation combinant informatique et psychologie, permettant de développer à la fois des compétences techniques et une compréhension des aspects humains et cognitifs des données.",
+    licence_info_cours: "Cours : Fouille de données, Interprétation et compilation, Analyse de données verbales.",
+    licence_info_desc: "Cette licence à distance combine une solide formation en informatique avec des cours de psychologie.",
+
     licence_math_title: "Licence en Mathématiques et Informatique",
     licence_math_span: "Université Grenoble Alpes – UGA",
-    licence_math_specialisation: "Formation solide en algorithmique, structures mathématiques et logique de programmation, préparant aux défis de modélisation et d’analyse.",
+    licence_math_cours: "Cours : Programmation fonctionnelle et impérative, Analyse numérique, Algèbre linéaire.",
+    licence_math_desc: "Cette formation a renforcé ma base en algorithmique, structures mathématiques et logique de programmation.",
+
     baccalaureat_title: "Baccalauréat",
     baccalaureat_span: "Lycée Mamadou M’Bodj – Sebenikoro",
-    baccalaureat_specialisation: "Obtention du bac avec mention Bien. Admission au Concours d’Excellence du Mali, distinction réservée aux meilleurs étudiants."
-    ,
+    baccalaureat_desc1: "Obtention du baccalauréat avec mention Bien au Lycée Mamadou M’Bodj à Sebenikoro.",
+    baccalaureat_desc2: "Grâce à cela, j’ai été admise au Concours d’Excellence du Mali, une distinction pour les meilleurs étudiants du pays, offrant une bourse pour étudier en France.",
+    
     // Expériences
         // Expériences
+    context: "Contexte",
+    methods: "Méthodes",
+    results: "Résultats",
     exp1_title: "Analyse et optimisation d’un RAG – AREAL",
     exp1_span: "Projet interne",
+    exp1_date: "Sept 2025 – Présent",
     exp1_contexte: "Amélioration des performances d’un chatbot interne.",
     exp1_methodes: "Optimisation du flux de données et ajustement des algorithmes de réponse.",
     exp1_resultats: "Chatbot fonctionnel et plus rapide, amélioration de la qualité des réponses.",
 
     exp2_title: "INRIA – Nancy",
     exp2_span: "Stage d’été 2025",
+    exp2_date: "Juin – Août 2025",
     exp2_contexte: "Stage sur l’acquisition et l’organisation de données multimodales pour le robot Shelfy.",
     exp2_methodes: "Organisation de séances d’enregistrement, utilisation de YOLO et OpenCV pour le tracking des objets et des personnes.",
     exp2_resultats: "Base de données de 10 To avec reconnaissance faciale et anonymisation, prête pour analyse.",
 
     exp3_title: "CRAN – Université de Lorraine",
     exp3_span: "Fév – Mai 2025",
+    exp3_date: "Fév – Mai 2025",
     exp3_contexte: "Test de marche de 6 minutes pour évaluer la mobilité des patients.",
     exp3_methodes: "Application du filtre de Madgwick pour corriger les trajectoires des capteurs.",
     exp3_resultats: "Précision accrue de 20% dans l’analyse des trajectoires, meilleure évaluation clinique.",
 
     exp4_title: "Directrice des systèmes d'information – TELECOM Nancy Services",
     exp4_span: "2023 – 2024",
-    exp4_contexte: "Gestion IT pour la Junior Entreprise de TELECOM Nancy, 20 collaborateurs.",
+    exp4_contexte: "Gestion IT pour la Junior Entreprise de TELECOM Nancy, 15 collaborateurs.",
     exp4_methodes: "Administration serveur, support utilisateur, mise à jour et maintenance du site web.",
     exp4_resultats: "Disponibilité accrue du système, site web plus clair et accessible, satisfaction des membres améliorée.",
 
@@ -88,14 +104,14 @@ const translations = {
 
     exp7_title: "Tutrice en maths appliquées – Université Grenoble Alpes",
     exp7_span: "Sept – Déc 2022",
-    exp7_contexte: "Tutorat pour 30 étudiants en mathématiques appliquées.",
+    exp7_contexte: "Tutorat pour 20 étudiants en mathématiques appliquées.",
     exp7_methodes: "Animation de TD, exercices guidés et suivi individualisé.",
     exp7_resultats: "Taux de réussite final de 60%, meilleure compréhension des concepts pour la majorité des étudiants."
     ,
     // CARTES PROJETS (texte complet)
     projet1_title: "Détection de fraude",
     projet1_span: "Machine Learning & Big Data",
-    projet1_contexte: "Projet académique pour détecter les transactions frauduleuses à partir d’un dataset volumineux.",
+    projet1_contexte: "Projet personnel pour détecter les transactions frauduleuses à partir d’un dataset volumineux.",
     projet1_methodes: "Utilisation de Kafka pour le streaming de données, Spark pour le traitement distribué, et modèles ML avec Python.",
     projet1_resultats: "Système capable de détecter les anomalies en temps réel avec un taux de précision supérieur à 90%.",
 
@@ -184,55 +200,67 @@ const translations = {
     diplome_title: "Engineering Degree in Computer Science",
     diplome_span: "TELECOM Nancy | 2023-2026",
     diplome_specialisation: "Specialization: Artificial Intelligence and Big Data.",
-    diplome_detail: "The IAMD specialization at Télécom Nancy trains engineers capable of processing massive datasets, implementing AI models, and working on real projects in modern technological environments. <a href='https://telecomnancy.univ-lorraine.fr/formation/approfondissements/intelligence-artificielle-et-masses-de-donnees/' target='_blank'>Learn more</a>",
+    diplome_cours: "Courses: Machine Learning, Big Data Technologies, Data Visualization, Deep learning",
+    diplome_desc: "The IAMD specialization at Télécom Nancy trains engineers capable of processing massive datasets, implementing AI models, and working on real projects in modern technological environments.",
 
     master_title: "Master in Mathematics and Applications",
     master_span: "University of Lorraine – Nancy | 2025-2026",
     master_specialisation: "Specialization: Mathematical Engineering for Data Science.",
-    master_detail: "This master’s program provides high-level training in applied mathematics, data processing, and analytical methods, with tracks in mathematical engineering or research. <a href='https://iecl.univ-lorraine.fr/master-2-imsd/' target='_blank'>Learn more</a>",
+    master_cours: "Courses: Statistical Learning, Optimization, Stochastic Processes, Financial Mathematics.",
+    master_desc: "This master’s program provides high-level training in applied mathematics, data processing, and analytical methods, with tracks in mathematical engineering or research.",
 
     licence_info_title: "Bachelor in Computer Science, Minor in Psychology",
     licence_info_span: "Université Paris 8 | 2025-2026",
-    licence_info_specialisation: "Courses: Data Mining, Interpretation and Compilation, Verbal Data Analysis.",
-    licence_info_detail: "This distance-learning bachelor combines solid computer science training with psychology courses, allowing development of both technical skills and understanding of human and cognitive aspects of data, language, and interactions. <a href='https://www.iedparis8.net/?-licence-d-informatique-' target='_blank'>Learn more</a>",
+    licence_info_cours: "Courses: Data Mining, Interpretation and Compilation, Verbal Data Analysis.",
+    licence_info_desc: "This distance-learning bachelor combines solid computer science training with psychology courses, allowing development of both technical skills and understanding of human and cognitive aspects of data, language, and interactions.",
 
     licence_math_title: "Bachelor in Mathematics and Computer Science",
     licence_math_span: "University Grenoble Alpes – UGA | 2021-2023",
-    licence_math_specialisation: "Courses: Functional and imperative programming, Numerical Analysis, Linear Algebra.",
-    licence_math_detail: "This program reinforced your foundation in algorithms, mathematical structures, and programming logic, preparing you for modeling, analysis, or optimization challenges in advanced studies. <a href='https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/licence-XA/licence-informatique-IAI7UC15/parcours-mathematiques-informatique-2e-annee-valence-IPQHWE22.html' target='_blank'>Learn more</a>",
+    licence_math_cours: "Courses: Functional and imperative programming, Numerical Analysis, Linear Algebra.",
+    licence_math_desc: "This program reinforced your foundation in algorithms, mathematical structures, and programming logic, preparing you for modeling, analysis, or optimization challenges in advanced studies.",
 
     baccalaureat_title: "High School Diploma – Lycée Mamadou M’Bodj, Sebenikoro",
     baccalaureat_span: "Promotion 2020-2021",
-    baccalaureat_specialisation: "Obtained the baccalaureate with honors (Bien) at Lycée Mamadou M’Bodj in Sebenikoro.",
-    baccalaureat_detail: "Thanks to this, I was admitted to Mali’s Excellence Contest, a distinction for the country’s top students, granting a scholarship to study in France. <a href='https://dg-enseignementsup.ml/wp-content/uploads/2021/03/Horaires-de-passage-des-candidats_18-mars-2021.pdf' target='_blank'>Learn more</a>"
+    baccalaureat_desc1: "Obtained the baccalaureate with honors (Bien) at Lycée Mamadou M’Bodj in Sebenikoro.",
+    baccalaureat_desc2: "Thanks to this, I was admitted to Mali’s Excellence Contest, a distinction for the country’s top students, granting a scholarship to study in France."
+
+
     ,
         // Experiences - English
+    context: "Context",
+    methods: "Methods",
+    results: "Results",
+    
     exp1_title: "Analysis and Optimization of a RAG – AREAL",
     exp1_span: "Internal Project",
+    exp1_date: "Sept 2025 – Present",
     exp1_contexte: "Improvement of an internal chatbot’s performance.",
     exp1_methodes: "Optimized data flow and adjusted response algorithms.",
     exp1_resultats: "Functional and faster chatbot, improved response quality.",
 
     exp2_title: "INRIA – Nancy",
     exp2_span: "Summer Internship 2025",
+    exp2_date: "June – August 2025",
     exp2_contexte: "Internship on acquisition and organization of multimodal data for the Shelfy robot.",
     exp2_methodes: "Organized recording sessions, used YOLO and OpenCV for object and person tracking.",
     exp2_resultats: "10 TB database with facial recognition and anonymization, ready for analysis.",
 
     exp3_title: "CRAN – University of Lorraine",
-    exp3_span: "Feb – May 2025",
+    exp3_span: "Research project",
+    exp3_date: "Feb – May 2025",
     exp3_contexte: "6-minute walk test to assess patient mobility.",
     exp3_methodes: "Applied Madgwick filter to correct sensor trajectories.",
     exp3_resultats: "20% improved trajectory accuracy, enabling better clinical evaluation.",
 
     exp4_title: "IT Director – TELECOM Nancy Services",
     exp4_span: "2023 – 2024",
-    exp4_contexte: "IT management for TELECOM Nancy’s Junior Enterprise, 20 team members.",
+    exp4_contexte: "IT management for TELECOM Nancy’s Junior Enterprise, 15 team members.",
     exp4_methodes: "Server administration, user support, website updates and maintenance.",
     exp4_resultats: "Increased system availability, clearer and more accessible website, improved member satisfaction.",
 
-    exp5_title: "Operational Intern – KOSY Appart’Hôtel, Nancy",
-    exp5_span: "July 2024",
+    exp5_title: "KOSY Appart’Hôtel - Nancy",
+    exp5_date: "July 2024",
+    exp5_span: "Operational Internship",
     exp5_contexte: "Operational internship in hotel reception and coordination.",
     exp5_methodes: "Room cleaning and organization, scheduling, client assistance, inventories.",
     exp5_resultats: "Improved customer satisfaction and optimized internal coordination.",
@@ -243,9 +271,10 @@ const translations = {
     exp6_methodes: "Personalized tutoring and progress monitoring.",
     exp6_resultats: "Average student improvement of +2 points.",
 
-    exp7_title: "Math Tutor – University Grenoble Alpes",
-    exp7_span: "Sept – Dec 2022",
-    exp7_contexte: "Tutoring 30 students in applied mathematics.",
+    exp7_title: "University Grenoble Alpes - Valence",
+    exp7_date: "Sept – Dec 2022",
+    exp7_span: "Math Tutor",
+    exp7_contexte: "Tutoring 20 students in applied mathematics.",
     exp7_methodes: "Led tutorials, guided exercises, and individual follow-up.",
     exp7_resultats: "Final pass rate 60%, majority of students improved understanding of concepts."
     ,
