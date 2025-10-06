@@ -357,7 +357,7 @@ function setLanguage(lang) {
   }
 }
 
-// ✅ Ajout : détection du paramètre ?lang= dans l’URL
+// Ajout : détection du paramètre ?lang= dans l’URL
 const params = new URLSearchParams(window.location.search);
 let urlLang = params.get("lang");
 
