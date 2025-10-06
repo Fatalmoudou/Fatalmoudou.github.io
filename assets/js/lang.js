@@ -350,7 +350,12 @@ function setLanguage(lang) {
   });
 
   document.getElementById("lang-toggle").textContent = lang === "fr" ? "EN" : "FR";
+  const cvLink = document.querySelector(".button-cv");
+  if (cvLink) {
+    cvLink.href = lang === "fr" ? "files/cv_fr.pdf" : "files/cv_en.pdf";
+  }
 }
+
 
 let currentLang = localStorage.getItem('lang') || 'fr';
 setLanguage(currentLang);
