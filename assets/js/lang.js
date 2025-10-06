@@ -344,22 +344,35 @@ function setLanguage(lang) {
 
   document.querySelectorAll("[data-key]").forEach(el => {
     const key = el.getAttribute("data-key");
-    if(translations[lang][key]) {
+    if (translations[lang][key]) {
       el.textContent = translations[lang][key];
     }
   });
 
   document.getElementById("lang-toggle").textContent = lang === "fr" ? "EN" : "FR";
+  
   const cvLink = document.querySelector(".button-cv");
   if (cvLink) {
     cvLink.href = lang === "fr" ? "files/cv_fr.pdf" : "files/cv_en.pdf";
   }
 }
 
+// ✅ Ajout : détection du paramètre ?lang= dans l’URL
+const params = new URLSearchParams(window.location.search);
+let urlLang = params.get("lang");
 
-let currentLang = localStorage.getItem('lang') || 'fr';
+// Si le paramètre est présent, on le prend et on l’enregistre
+if (urlLang) {
+  localStorage.setItem('lang', urlLang);
+}
+
+// Sinon, on garde la langue enregistrée ou on met fr par défaut
+let currentLang = urlLang || localStorage.getItem('lang') || 'fr';
+
+// Applique la langue
 setLanguage(currentLang);
 
+// Gestion du bouton de bascule
 document.getElementById("lang-toggle").addEventListener("click", () => {
   currentLang = currentLang === "fr" ? "en" : "fr";
   localStorage.setItem('lang', currentLang);
