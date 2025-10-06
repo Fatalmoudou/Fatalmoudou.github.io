@@ -197,7 +197,7 @@ const translations = {
     about_text: "Computer engineering student at Télécom Nancy, passionate about Data Science, Artificial Intelligence, and Big Data. I enjoy exploring new technological approaches to analyze, model, and leverage data to provide innovative and concrete solutions.",
 
     // Formations / Education
-    diplome_title: "Engineering Degree in Computer Science",
+    diplome_title: "Master's Degree in Computer Science",
     diplome_span: "TELECOM Nancy | 2023-2026",
     diplome_specialisation: "Specialization: Artificial Intelligence and Big Data.",
     diplome_cours: "Courses: Machine Learning, Big Data Technologies, Data Visualization, Deep learning",
