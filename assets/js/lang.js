@@ -63,22 +63,23 @@ const translations = {
     context: "Contexte",
     methods: "Méthodes",
     results: "Résultats",
-    exp1_title: "Analyse et optimisation d’un RAG – AREAL",
-    exp1_span: "Projet interne",
+
+    exp1_title: " AREAL- Savigny-le-Temple",
+    exp1_span: "Projet industriel",
     exp1_date: "Sept 2025 – Présent",
     exp1_contexte: "Amélioration des performances d’un chatbot interne.",
     exp1_methodes: "Optimisation du flux de données et ajustement des algorithmes de réponse.",
-    exp1_resultats: "Chatbot fonctionnel et plus rapide, amélioration de la qualité des réponses.",
+    exp1_resultats: "Le chatbot doit être fonctionnel et plus rapide, et la qualité des réponses doit être améliorée.",
 
     exp2_title: "INRIA – Nancy",
-    exp2_span: "Stage d’été 2025",
+    exp2_span: "Stage d’été",
     exp2_date: "Juin – Août 2025",
     exp2_contexte: "Stage sur l’acquisition et l’organisation de données multimodales pour le robot Shelfy.",
     exp2_methodes: "Organisation de séances d’enregistrement, utilisation de YOLO et OpenCV pour le tracking des objets et des personnes.",
     exp2_resultats: "Base de données de 10 To avec reconnaissance faciale et anonymisation, prête pour analyse.",
 
     exp3_title: "CRAN – Université de Lorraine",
-    exp3_span: "Fév – Mai 2025",
+    exp3_span: "Projet de recherche",
     exp3_date: "Fév – Mai 2025",
     exp3_contexte: "Test de marche de 6 minutes pour évaluer la mobilité des patients.",
     exp3_methodes: "Application du filtre de Madgwick pour corriger les trajectoires des capteurs.",
@@ -90,8 +91,9 @@ const translations = {
     exp4_methodes: "Administration serveur, support utilisateur, mise à jour et maintenance du site web.",
     exp4_resultats: "Disponibilité accrue du système, site web plus clair et accessible, satisfaction des membres améliorée.",
 
-    exp5_title: "Stagiaire opérationnel – KOSY Appart’Hôtel, Nancy",
-    exp5_span: "Juillet 2024",
+    exp5_title: "KOSY Appart’Hôtel, Nancy",
+    exp5_span: "Stage opérationnel",
+    exp5_date: "Juillet 2024",
     exp5_contexte: "Stage opérationnel en accueil et coordination d’appart’hôtels.",
     exp5_methodes: "Nettoyage et organisation des chambres, planning, assistance clients, inventaires.",
     exp5_resultats: "Amélioration de la satisfaction clients et optimisation de la coordination interne.",
@@ -102,8 +104,9 @@ const translations = {
     exp6_methodes: "Tutorat personnalisé et suivi des progrès.",
     exp6_resultats: "Amélioration moyenne des résultats de +2 points.",
 
-    exp7_title: "Tutrice en maths appliquées – Université Grenoble Alpes",
-    exp7_span: "Sept – Déc 2022",
+    exp7_title: " Université Grenoble Alpes",
+    exp7_date: "Sept – Déc 2022",
+    exp7_span: "Tutorat en mathématiques",
     exp7_contexte: "Tutorat pour 20 étudiants en mathématiques appliquées.",
     exp7_methodes: "Animation de TD, exercices guidés et suivi individualisé.",
     exp7_resultats: "Taux de réussite final de 60%, meilleure compréhension des concepts pour la majorité des étudiants."
@@ -142,9 +145,15 @@ const translations = {
     projet6_title: "Application Java – Révision TOEIC",
     projet6_span: "Développement logiciel & Education",
     projet6_contexte: "Création d’une application pour aider à la préparation du TOEIC.",
-    projet6_methodes: "Application Java avec interface graphique, quiz interactifs, suivi des scores et rappels personnalisés.",
+    projet6_methodes: "Application Java avec interface graphique, quiz interactifs, suivi des scores et rappels personnalisés. Utilisation de Google TTS et de JavaFX.",
     projet6_resultats: "Application fonctionnelle permettant aux utilisateurs de réviser le vocabulaire et les exercices de compréhension de manière interactive.",
 
+    projet7_title: "Gestion de masse de données",
+    projet7_span: "Data Engineering",
+    projet7_contexte: "Création d’un système de gestion de données entre plusieurs sources sans utiliser de médiateur.",
+    projet7_methodes: "Utilisation d'outils comme Elasticsearch pour l'indexation et la recherche de données, ainsi que des pipelines de données pour l'intégration.",
+    projet7_resultats: "Système de gestion de données opérationnel, capable de traiter des requêtes complexes et d'intégrer des données provenant de différentes sources.",
+    projet_lien: "Voir le projet",
     // CERTIFICATIONS
     cert1_title: "IBM – Data Engineering",
     cert1_desc: "Acquisition de compétences avancées en gestion de données, pipelines ETL, manipulation de gros volumes de données avec Python et SQL. Développement de rigueur analytique et capacité à résoudre des problèmes complexes.",
@@ -166,7 +175,10 @@ const translations = {
     cert6_desc: "Acquisition de compétences pratiques pour intervenir efficacement en situations d’urgence : premiers soins, sang-froid, prise d’initiative et sens des responsabilités.",
 
     cert7_title: "MOOC INRS – Santé et sécurité au travail",
-    cert7_desc: "Développement de connaissances sur la prévention des risques professionnels, sécurité au travail, sensibilisation aux bonnes pratiques et attention aux détails dans l’organisation d’activités."
+    cert7_desc: "Développement de connaissances sur la prévention des risques professionnels, sécurité au travail, sensibilisation aux bonnes pratiques et attention aux détails dans l’organisation d’activités.",
+
+    contact: "Vous pouvez me joindre via :",
+    contact_me: "Contactez-moi",
   },
 
   en: {
@@ -178,7 +190,7 @@ const translations = {
     nav_certifications: "Certifications",
     nav_contact: "Contact",
     nav_cv: "Download CV",
-
+    contact: "You can reach me via :",
     // SECTIONS
     a_propos_title: "About Me",
     formation_title: "Education",
@@ -231,15 +243,15 @@ const translations = {
     methods: "Methods",
     results: "Results",
     
-    exp1_title: "Analysis and Optimization of a RAG – AREAL",
-    exp1_span: "Internal Project",
+    exp1_title: "AREAL- Savigny-le-Temple",
+    exp1_span: "Industriel Project",
     exp1_date: "Sept 2025 – Present",
-    exp1_contexte: "Improvement of an internal chatbot’s performance.",
-    exp1_methodes: "Optimized data flow and adjusted response algorithms.",
-    exp1_resultats: "Functional and faster chatbot, improved response quality.",
+    exp1_contexte: "Analyzing and optimizing an internal chatbot's performance.",
+    exp1_methodes: "Optimizing data flow and adjusting response algorithms.",
+    exp1_resultats: "The chatbot must be functional and faster, and the response quality must be improved.",
 
     exp2_title: "INRIA – Nancy",
-    exp2_span: "Summer Internship 2025",
+    exp2_span: "Summer Internship",
     exp2_date: "June – August 2025",
     exp2_contexte: "Internship on acquisition and organization of multimodal data for the Shelfy robot.",
     exp2_methodes: "Organized recording sessions, used YOLO and OpenCV for object and person tracking.",
@@ -311,10 +323,17 @@ const translations = {
 
     projet6_title: "Java App – TOEIC Revision",
     projet6_span: "Software Development & Education",
-    projet6_contexte: "Creation of an application to help TOEIC preparation.",
+    projet6_contexte: "Creation of an application to help TOEIC preparation.Use of Google TTS and JavaFX.",
     projet6_methodes: "Java application with GUI, interactive quizzes, score tracking, and personalized reminders.",
     projet6_resultats: "Functional app allowing users to revise vocabulary and comprehension exercises interactively.",
 
+    projet7_title: "Mass Data Management",
+    projet7_span: "Data Engineering",
+    projet7_contexte: "Creation of a data management system between multiple sources without using a mediator.",
+    projet7_methodes: "Use of tools like Elasticsearch for data indexing and searching, as well as data pipelines for integration.",
+    projet7_resultats: "Operational data management system capable of handling complex queries and integrating data from different sources.",
+    projet_lien: "View Project",
+    contact_me: "Contact Me",
     // CERTIFICATIONS
     cert1_title: "IBM – Data Engineering",
     cert1_desc: "Acquisition of advanced skills in data management, ETL pipelines, handling large datasets with Python and SQL. Developing analytical rigor and problem-solving ability.",
