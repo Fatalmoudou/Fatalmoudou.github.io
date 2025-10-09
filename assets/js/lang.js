@@ -4,6 +4,7 @@
 const translations = {
   fr: {
     // NAVIGATION
+    ensavoirplus: "En savoir plus",
     nav_a_propos: "À propos",
     nav_formation: "Formation",
     nav_experiences: "Expériences",
@@ -183,6 +184,7 @@ const translations = {
 
   en: {
     // NAVIGATION
+    ensavoirplus: "Learn more",
     nav_a_propos: "About",
     nav_formation: "Education",
     nav_experiences: "Experiences",
